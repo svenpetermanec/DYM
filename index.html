@@ -1,0 +1,40 @@
+<html>  
+<head>  
+<link href="https://fonts.googleapis.com/css?family=Archivo&display=swap" rel="stylesheet">  
+</head>  
+<body>  
+<div class="side">  
+<div class="slika">  
+<img style="height:60px; position:relative; margin-top:18px; left:15%;"src="tsrb.png">  
+</div>  
+<h1 style="text-align:center;">Pametni parking s evidencijom ulaska i izlaska</h1>  
+</div>  
+<div class="overview">  
+<p style="margin-left:10px; margin-top:7px; font-size:25px;">Opis</p>  
+<p class="opis">Na ulazu i izlazu s parkrališta nalazi se RFID senor koji upravlja podizanjem rampe i evidentira ulaske i izlaske. Ispred se nalazi 7 segmentni LED display koji pokazuje ima li i koja su mjesta slobodna. Svako parkirno mjesto ima svoj IR senzor koji provjerava ima li parkirano vozilo ili ne i pomću LED dioda daje odgovarajući odgovor. Svaki ulazak i izlazak se bilježi u SQL bazu podataka te zatim prikazuje na web stranici.</p>  
+</div>  
+<div class="filter">  
+<div class="odabir">  
+<form action="display.php" method="post">  
+<label>Odaberi auto:</label>  
+<select name="vehicle">  
+<option></option>  
+<option value="SP-309-RB">SP-309-RB</option>  
+<option value="ZG-5534-FR">ZG-5534-FR</option>  
+<option value="OS-1348-C">OS-1348-C</option>  
+</select>  
+<div class="gumb">  
+<input class="submit" type="submit" value="Filter">  
+</div>  
+</form>  
+</div>  
+</div>  
+<table border="0" cellspacing="0" cellpadding="4">  
+<tr>  
+<td class="table_titles" style="text-align:center;font-size:18px;">Vrijeme</td>  
+<td class="table_titles" style="font-size:18px;">Vozilo</td>  
+</tr>  
+</table>  
+</body> 
+</html>
+. 
