@@ -40,4 +40,3 @@ mysqli_close($con);
 </table>
 </body>
 </html>
-.

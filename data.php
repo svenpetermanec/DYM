@@ -11,4 +11,3 @@ else
 echo "error is ".mysqli_error($con );
 }
 ?>
-.
